@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { getAirportByDomain } from "@/lib/airports.config";
 
-export function proxy(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const host = request.headers.get("host");
   const airport = getAirportByDomain(host);
 
