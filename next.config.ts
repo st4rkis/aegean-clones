@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
 
   experimental: {
-    // REMOVE turbo — it's no longer supported
     serverActions: {
       bodySizeLimit: "2mb",
     },
